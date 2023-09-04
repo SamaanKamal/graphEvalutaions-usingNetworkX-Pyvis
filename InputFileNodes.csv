@@ -1,0 +1,18 @@
+id,media,media.type,type.label,audience.size
+1,NY Times,1,Newspaper,20
+2,Washington Post,1,Newspaper,25
+3,Wall Street Journal,1,Newspaper,30
+4,USA Today,1,Newspaper,32
+5,LA Times,1,Newspaper,20
+6,New York Post,1,Newspaper,50
+7,CNN,2,TV,56
+8,MSNBC,2,TV,34
+9,FOX News,2,TV,60
+10,ABC,2,TV,23
+11,BBC,2,TV,34
+12,Yahoo News,3,Online,33
+13,Google News,3,Online,23
+14,Reuters.com,3,Online,12
+15,NYTimes.com,3,Online,24
+16,WashingtonPost.com,3,Online,28
+17,AOL.com,3,Online,33

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            height: 100%;
+            background-color: rgb(198, 195, 195);
+        }
+
+        div {
+            place-content: center;
+        }
+
+        html {
+            margin: auto;
+        }
+
+        body {
+            vertical-align: middle;
+        }
+
+        h2 {
+            margin: 5px;
+        }
+
+        table {
+            text-align: center;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        td {
+            margin: 2px;
+            border-radius: 5px;
+            border: black solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <td>Number of communities </td>
+            <td>Minimum conductance</td>
+            <td>Community with minimum conductance</td>
+            <td>Modularity</td>
+            <td>nmi_score</td>
+        </thead>
+          <tbody>
+            <td>{{number}}</td>
+        
+       
+      
+            <td>{{min_cond}}</td>
+       
+       
+            
+            <td>{{min_comm}}</td>
+      
+        
+           
+            <td>{{mod}}</td>
+      
+        
+            
+            <td>{{nmi_score}}</td>
+          </tbody>
+            
+       
+    </table>
+    
+    
+    <table>
+        <thead>
+            <td>id</td>
+            <td>Size</td>
+            <td>Degree</td>
+            <td>Betweenness_centrality</td>
+            <td>Closeness_centrality</td>
+            <td>Eigenvector_centrality</td>
+            <td>Community</td>
+            <td>Pagerank</td>
+        </thead>
+        <tbody>
+            {% for item in nodes %}
+            <tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]['size']}}</td>
+                <td>{{item[1]['degree']}}</td>
+                <td>{{item[1]['betweenness_centrality']}}</td>
+                <td>{{item[1]['closeness_centrality']}}</td>
+                <td>{{item[1]['eigenvector_centrality']}}</td>
+                <td>{{item[1]['community']}}</td>
+                <td>{{item[1]['pagerank']}}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
